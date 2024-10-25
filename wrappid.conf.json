@@ -1,0 +1,332 @@
+{
+    "dev": {
+        "cache": [
+            {
+                "name": "wrappid-cache",
+                "username": "default",
+                "password": "",
+                "host": "127.0.0.1",
+                "port": "6379"
+            }
+        ],
+        "databases": [
+            {
+                "name": "application",
+                "host": "localhost",
+                "port": "5432",
+                "dialect": "postgres",
+                "database": "wrappid-db",
+                "username": "postgres",
+                "password": "root",
+                "logging": false
+            }
+        ],
+        "jwt": {
+            "accessTokenSecret": "",
+            "refreshAccessTokenSecret": "",
+            "expTime": "60m",
+            "expTimeRefreshToken": "1000m"
+        },
+        "storage": {
+            "s3": {
+                "bucket": "",
+                "region": "",
+                "accessKeyId": "",
+                "secretAccessKey": ""
+            }
+        },
+        "payment": {
+            "enabled": false,
+            "gateways": [
+                {
+                    "name": "razorpay",
+                    "default": true,
+                    "key": "",
+                    "secret": ""
+                },
+                {
+                    "name": "paypal",
+                    "default": false,
+                    "key": "",
+                    "secret": ""
+                }
+            ]
+        },
+        "communication": {
+            "enabled": true,
+            "email": {
+                "enabled": true,
+                "providers": [
+                    {
+                        "default": true,
+                        "fromName": "",
+                        "fromEmail": "",
+                        "replyTo": "",
+                        "service": "",
+                        "email": "",
+                        "password": ""
+                    }
+                ]
+            },
+            "sms": {
+                "enabled": true,
+                "providers": [
+                    {
+                        "default": true,
+                        "enabled": true,
+                        "service": "",
+                        "url": "",
+                        "username": "",
+                        "password": "",
+                        "sender": ""
+                    }
+                ]
+            },
+            "whatsapp": {
+                "enabled": true,
+                "providers": [
+                    {
+                        "default": true,
+                        "api_url": "",
+                        "id": "",
+                        "accessToken": ""
+                    }
+                ]
+            }
+        },
+        "github": {
+            "createIssueURL": "",
+            "token": "",
+            "defaultLabels": [
+                ""
+            ]
+        },
+        "logging": {
+            "accessLog": ""
+        },
+        "wrappid": {
+            "otpLength": 6,
+            "defaultUserRole": "developer"
+        }
+    },
+    "stage": {
+        "cache": [
+            {
+                "name": "wrappid-cache",
+                "username": "default",
+                "password": "",
+                "host": "127.0.0.1",
+                "port": "6379"
+            }
+        ],
+        "databases": [
+            {
+                "name": "application",
+                "host": "localhost",
+                "port": "5432",
+                "dialect": "postgres",
+                "database": "wrappid-db",
+                "username": "postgres",
+                "password": "admin",
+                "logging": false
+            }
+        ],
+        "jwt": {
+            "accessTokenSecret": "",
+            "refreshAccessTokenSecret": "",
+            "expTime": "60m",
+            "expTimeRefreshToken": "1000m"
+        },
+        "storage": {
+            "s3": {
+                "bucket": "",
+                "region": "",
+                "accessKeyId": "",
+                "secretAccessKey": ""
+            }
+        },
+        "payment": {
+            "enabled": false,
+            "gateways": [
+                {
+                    "name": "razorpay",
+                    "default": true,
+                    "key": "",
+                    "secret": ""
+                },
+                {
+                    "name": "paypal",
+                    "default": false,
+                    "key": "",
+                    "secret": ""
+                }
+            ]
+        },
+        "communication": {
+            "enabled": true,
+            "email": {
+                "enabled": true,
+                "providers": [
+                    {
+                        "default": true,
+                        "fromName": "",
+                        "fromEmail": "",
+                        "replyTo": "",
+                        "service": "",
+                        "email": "",
+                        "password": ""
+                    }
+                ]
+            },
+            "sms": {
+                "enabled": true,
+                "providers": [
+                    {
+                        "default": true,
+                        "enabled": true,
+                        "service": "",
+                        "url": "",
+                        "username": "",
+                        "password": "",
+                        "sender": ""
+                    }
+                ]
+            },
+            "whatsapp": {
+                "enabled": true,
+                "providers": [
+                    {
+                        "default": true,
+                        "api_url": "",
+                        "id": "",
+                        "accessToken": ""
+                    }
+                ]
+            }
+        },
+        "github": {
+            "createIssueURL": "",
+            "token": "",
+            "defaultLabels": [
+                ""
+            ]
+        },
+        "logging": {
+            "accessLog": ""
+        },
+        "wrappid": {
+            "otpLength": 6,
+            "defaultUserRole": "developer"
+        }
+    },
+    "prod": {
+        "cache": [
+            {
+                "name": "wrappid-cache",
+                "username": "default",
+                "password": "",
+                "host": "127.0.0.1",
+                "port": "6379"
+            }
+        ],
+        "databases": [
+            {
+                "name": "wrappid-database",
+                "host": "localhost",
+                "port": "5432",
+                "dialect": "postgres",
+                "database": "application",
+                "username": "postgres",
+                "password": "",
+                "logging": false
+            }
+        ],
+        "jwt": {
+            "accessTokenSecret": "",
+            "refreshAccessTokenSecret": "",
+            "expTime": "60m",
+            "expTimeRefreshToken": "1000m"
+        },
+        "storage": {
+            "s3": {
+                "bucket": "",
+                "region": "",
+                "accessKeyId": "",
+                "secretAccessKey": ""
+            }
+        },
+        "payment": {
+            "enabled": false,
+            "gateways": [
+                {
+                    "name": "razorpay",
+                    "default": true,
+                    "key": "",
+                    "secret": ""
+                },
+                {
+                    "name": "paypal",
+                    "default": false,
+                    "key": "",
+                    "secret": ""
+                }
+            ]
+        },
+        "communication": {
+            "enabled": true,
+            "email": {
+                "enabled": true,
+                "providers": [
+                    {
+                        "default": true,
+                        "fromName": "",
+                        "fromEmail": "",
+                        "replyTo": "",
+                        "service": "",
+                        "email": "",
+                        "password": ""
+                    }
+                ]
+            },
+            "sms": {
+                "enabled": true,
+                "providers": [
+                    {
+                        "default": true,
+                        "enabled": true,
+                        "service": "",
+                        "url": "",
+                        "username": "",
+                        "password": "",
+                        "sender": ""
+                    }
+                ]
+            },
+            "whatsapp": {
+                "enabled": true,
+                "providers": [
+                    {
+                        "default": true,
+                        "api_url": "",
+                        "id": "",
+                        "accessToken": ""
+                    }
+                ]
+            }
+        },
+        "github": {
+            "createIssueURL": "",
+            "token": "",
+            "defaultLabels": [
+                ""
+            ]
+        },
+        "logging": {
+            "accessLog": ""
+        },
+        "wrappid": {
+            "otpLength": 6,
+            "defaultUserRole": "developer"
+        }
+    }
+}
